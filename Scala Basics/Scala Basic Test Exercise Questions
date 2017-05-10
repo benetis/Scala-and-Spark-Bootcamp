@@ -3,15 +3,36 @@ Answer the following questions using your Scala Basics Knowledge!
 Questions
 
 1. What is 2 to the power of 5 ?
+scala> math.pow(2,5)
+res13: Double = 32.0
 
 2. What is the remainder of 180 divided by 7?
+scala> 180 % 7
+res14: Int = 5
 
 3. Given variable pet_name = "Sammy", use string interpolation to print out
  "My dog's name is Sammy."
 
+ scala> var pet_name = "Samy"
+pet_name: String = Samy
+
+scala> printf("My dog's name is %s",pet_name)
+My dog's name is Samy
+
 4. Use scala to find out if the letter sequence "xyz" is contained in:
 "sadfjshfjyuyxyzjkfuidkjklhasyysdfk"
+scala> val tmp = "sadfjshfjyuyxyzjkfuidkjklhasyysdfk"
+tmp: String = sadfjshfjyuyxyzjkfuidkjklhasyysdfk
+
+scala> tmp.contains("xyz")
+res17: Boolean = true
 
 5. What is the difference between a value and a variable?
+a value is immutable compare to a variable
 
 6. Given the tuple (1,2,3,(4,5,6)) retrieve the number 6.
+scala> val my_tup = (1,2,3,(4,5,6)) 
+my_tup: (Int, Int, Int, (Int, Int, Int)) = (1,2,3,(4,5,6))
+
+scala> my_tup._4._3
+res18: Int = 6
